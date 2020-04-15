@@ -22,3 +22,11 @@ def n_fibonacci(number):
     for current in fibonacci(number):
         result = current
     return result
+
+print('Running fibonacci test:')
+assert n_fibonacci(1) == 1
+assert n_fibonacci(2) == 1
+assert n_fibonacci(3) == 2
+assert n_fibonacci(4) == 3
+assert n_fibonacci(5) == 5
+print('End fibonacci test')

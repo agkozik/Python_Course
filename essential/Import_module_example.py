@@ -1,4 +1,4 @@
-import modfibonacci as fib
+from essential.modfibonacci import n_fibonacci
 
 index = int(input('Enter a number:'))
-print(fib.n_fibonacci(index))
+print(n_fibonacci(index))

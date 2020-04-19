@@ -12,6 +12,8 @@ class MyObject:
         print(MyObject.class_attribute)
 
 
+# -------------------------------------------------------
+
 class Rectangle:
     def __init__(self, side_a, side_b):
         self.side_a = side_a
@@ -53,3 +55,35 @@ if __name__ == "__main__":
     main()
 
 
+# ------------------------------------------------------
+def decorator(fn):
+    def decorated_fn(*args, **kwargs):
+        print('Enter decorated function')
+        fn(*args, **kwargs)
+        print('End of decorated function')
+
+    return decorated_fn
+
+@decorator # аннотация заменяет вот такой код: print_hello = decorator(print_hello)
+
+def print_hello():
+    print('Hello')
+
+print_hello()
+
+# ---------------------------------------------------------
+def make_decorator(string):
+    def decorator(fn):
+        def decorated_fn(*args, **kwargs):
+            print(string)
+            fn(*args, **kwargs)
+        return decorated_fn
+    return decorator
+
+@make_decorator('First decorator')
+@make_decorator('Second decorator')
+def print_hello():
+    print('Hello')
+
+
+print_hello()

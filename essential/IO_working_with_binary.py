@@ -8,9 +8,9 @@ import random
 # numbers = [random.randint(-1000000, 1000000) for _ in range(1000)]
 #
 # # запись в текстовый файл данных значений
-# with open('../resources/text_file.txt', 'w') as data:
+# with open('../csv_data/text_file.txt', 'w') as csv_data:
 #     for i in numbers:
-#         data.write('{}\n'.format(i))
+#         csv_data.write('{}\n'.format(i))
 #
 # # запись в бинарный файл данных значений
 # import array
@@ -18,7 +18,7 @@ import random
 # numbers_array = array.array('i', numbers)
 # print(numbers)
 # print(numbers_array)
-# with open('../resources/bin_file.bin', 'wb') as binary_file:
+# with open('../csv_data/bin_file.bin', 'wb') as binary_file:
 #     binary_file.write(numbers_array)
 
 # считывание данных из текстового файла

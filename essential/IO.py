@@ -1,5 +1,5 @@
 # # открытие уже СУЩЕСТВУЮЩЕГО файла для чтения
-# my_file = open('../resources/my_file.txt')
+# my_file = open('../csv_data/my_file.txt')
 # # вывод содержимого файла
 # print(my_file.read())
 # my_file.close()
@@ -7,7 +7,7 @@
 # портабельный на разные операционные системы вариант прописывания
 # пути к файлам:
 # import os.path
-# portable_path_to_file = os.path.join('..', 'resources', 'my_file.txt')
+# portable_path_to_file = os.path.join('..', 'csv_data', 'my_file.txt')
 # my_file = open(portable_path_to_file)
 # print(my_file.read())
 # my_file.close()
@@ -27,7 +27,7 @@ with open('../resources/my_file.txt') as file:
     print(file.read())
 
 # file.writelines(lines) запись строк (в цикле вызывает метод write)
-# file.write(data) запись данных (символов или данных)
+# file.write(csv_data) запись данных (символов или данных)
 
     # запись данных в файл при помощи функции print(*args, file='my_file.txt')
 my_second_file = '../resources/my_second_file.txt'

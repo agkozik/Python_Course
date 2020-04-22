@@ -7,7 +7,7 @@ class EchoTCPHandler(socketserver.BaseRequestHandler):
         data = self.request.recv(1024).strip()
         print('Address: {}'.format(self.client_address[0]))
         print('Data: {}'.format(data.decode()))
-        print('Send data to Client.')
+        print('Send csv_data to Client.')
         self.request.sendall(data)
 
 

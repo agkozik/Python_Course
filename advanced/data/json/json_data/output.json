@@ -1,0 +1,10 @@
+{
+    "name": "Alex",
+    "type": "Animal",
+    "age": 5,
+    "hobbies": [
+        "guitar",
+        "cars",
+        "girls"
+    ]
+}
